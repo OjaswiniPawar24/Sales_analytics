@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 SELECT
     f.key AS country_code,
     f.value::FLOAT AS exchange_rate
